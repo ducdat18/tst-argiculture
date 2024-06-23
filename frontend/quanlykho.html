@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quản lý Kho Hàng</title>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@project-serum/anchor"></script>
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <h1>Quản lý Kho Hàng</h1>
+
+    <h2>Tạo Sản Phẩm</h2>
+    <label for="productId">Product ID:</label>
+    <input type="text" id="productId"><br><br>
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName"><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity"><br><br>
+    <label for="dateAdded">Date Added:</label>
+    <input type="date" id="dateAdded"><br><br>
+    <button id="createProductBtn">Tạo Sản Phẩm</button>
+
+    <h2>Xử Lý Đơn Hàng</h2>
+    <label for="orderQuantity">Quantity Ordered:</label>
+    <input type="number" id="orderQuantity"><br><br>
+    <button id="fulfillOrderBtn">Xử Lý Đơn Hàng</button>
+
+    <div id="result"></div> 
+</body>
+</html>
